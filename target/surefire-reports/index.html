@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,11 +104,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.homeyhutz.tests.SignupFlowTest" class="method navigator-link" hash-for-method="signupFlowTest">signupFlowTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.homeyhutz.tests.LoginFlowTest" class="method navigator-link" hash-for-method="verifyUserCanProceedTillOtpSubmit">verifyUserCanProceedTillOtpSubmit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -123,6 +118,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.homeyhutz.tests.HomePageTest" class="method navigator-link" hash-for-method="verifyHomePageLoginNavigation">verifyHomePageLoginNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.homeyhutz.tests.LoginFlowTest" class="method navigator-link" hash-for-method="verifyUserCanProceedTillOtpSubmit">verifyUserCanProceedTillOtpSubmit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -152,8 +152,8 @@
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\gaytri\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62358}, goog:processID: 57472, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62358/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c99860c9348cb8e3b2183a69716da75a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\gaytri\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62391}, goog:processID: 57476, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62391/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4078d7fccd71f3d7f3cdd71b9813d1c8
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.homeyhutz.base.BasePage.waitForVisibility(BasePage.java:21)
@@ -167,9 +167,9 @@ Session ID: c99860c9348cb8e3b2183a69716da75a
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.homeyhutz.tests.LoginFlowTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -178,25 +178,10 @@ Session ID: c99860c9348cb8e3b2183a69716da75a
                   <a name="verifyUserCanProceedTillOtpSubmit">
                   </a> <!-- verifyUserCanProceedTillOtpSubmit -->
                   <span class="method-name">verifyUserCanProceedTillOtpSubmit</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.homeyhutz.base.BasePage$$Lambda/0x00000000171c6eb8@4976085 (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\gaytri\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62708}, goog:processID: 15484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62708/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 203891c234fe6ef75d45f10d36fea8bb
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.homeyhutz.base.BasePage.waitUntilElementsPresent(BasePage.java:43)
-	at com.homeyhutz.base.BasePage.retryWaitUntilPresent(BasePage.java:71)
-	at com.homeyhutz.pages.OtpPage.waitForOtpPage(OtpPage.java:21)
-	at com.homeyhutz.tests.LoginFlowTest.verifyUserCanProceedTillOtpSubmit(LoginFlowTest.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -270,20 +255,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyUserCanProceedTillOtpSubmit')
 data.setCell(0, 2, 'com.homeyhutz.tests.LoginFlowTest')
-data.setCell(0, 3, 158600);
+data.setCell(0, 3, 53993);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'signupFlowTest')
 data.setCell(1, 2, 'com.homeyhutz.tests.SignupFlowTest')
-data.setCell(1, 3, 35714);
+data.setCell(1, 3, 35349);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyHomePageLoginNavigation')
 data.setCell(2, 2, 'com.homeyhutz.tests.HomePageTest')
-data.setCell(2, 3, 6107);
+data.setCell(2, 3, 4934);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -316,45 +301,43 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageLoginNavigation</span>
-                <span class="method-start">2976 ms</span>
+                <span class="method-start">2263 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyHomePageLoginNavigation status=SUCCESS method=HomePageTest.verifyHomePageLogi...)</span>
-                <span class="method-start">9087 ms</span>
+                <span class="method-start">7199 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.homeyhutz.tests.LoginFlowTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9557 ms</span>
+                <span class="method-start">7609 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyUserCanProceedTillOtpSubmit</span>
-                <span class="method-start">10755 ms</span>
+                <span class="method-start">8578 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyUserCanProceedTillOtpSubmit status=FAILURE method=LoginFlowTest.verifyUserCan...)</span>
-                <span class="method-start">169363 ms</span>
+                <span class="method-name">tearDown([TestResult name=verifyUserCanProceedTillOtpSubmit status=SUCCESS method=LoginFlowTest.verifyUserCan...)</span>
+                <span class="method-start">62573 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.homeyhutz.tests.SignupFlowTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">170109 ms</span>
+                <span class="method-start">62983 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">signupFlowTest</span>
-                <span class="method-start">171250 ms</span>
+                <span class="method-start">64009 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=signupFlowTest status=FAILURE method=SignupFlowTest.signupFlowTest()[pri:0, instanc...)</span>
-                <span class="method-start">206967 ms</span>
+                <span class="method-start">99366 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

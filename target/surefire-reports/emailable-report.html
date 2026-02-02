@@ -9,30 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">207,619</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">99,994</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.homeyhutz.tests.LoginFlowTest</td><td><a href="#m0">verifyUserCanProceedTillOtpSubmit</a></td><td rowspan="1">1770024594060</td><td rowspan="1">158600</td></tr><tr class="failedodd"><td rowspan="1">com.homeyhutz.tests.SignupFlowTest</td><td><a href="#m1">signupFlowTest</a></td><td rowspan="1">1770024754555</td><td rowspan="1">35714</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.homeyhutz.tests.HomePageTest</td><td><a href="#m2">verifyHomePageLoginNavigation</a></td><td rowspan="1">1770024586281</td><td rowspan="1">6107</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.homeyhutz.tests.SignupFlowTest</td><td><a href="#m0">signupFlowTest</a></td><td rowspan="1">1770026132195</td><td rowspan="1">35349</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.homeyhutz.tests.HomePageTest</td><td><a href="#m1">verifyHomePageLoginNavigation</a></td><td rowspan="1">1770026070449</td><td rowspan="1">4934</td></tr><tr class="passedodd"><td rowspan="1">com.homeyhutz.tests.LoginFlowTest</td><td><a href="#m2">verifyUserCanProceedTillOtpSubmit</a></td><td rowspan="1">1770026076764</td><td rowspan="1">53993</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.homeyhutz.tests.LoginFlowTest#verifyUserCanProceedTillOtpSubmit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.homeyhutz.base.BasePage$$Lambda/0x00000000171c6eb8@4976085 (tried for 30 second(s) with 500 milliseconds interval)
+<h2>Surefire test</h2><h3 id="m0">com.homeyhutz.tests.SignupFlowTest#signupFlowTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: input[inputmode=&apos;numeric&apos;], input[name=&apos;pin&apos;] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\gaytri\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62708}, goog:processID: 15484, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62708/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 203891c234fe6ef75d45f10d36fea8bb
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.homeyhutz.base.BasePage.waitUntilElementsPresent(BasePage.java:43)
-	at com.homeyhutz.base.BasePage.retryWaitUntilPresent(BasePage.java:71)
-	at com.homeyhutz.pages.OtpPage.waitForOtpPage(OtpPage.java:21)
-	at com.homeyhutz.tests.LoginFlowTest.verifyUserCanProceedTillOtpSubmit(LoginFlowTest.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.homeyhutz.tests.SignupFlowTest#signupFlowTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: input[inputmode=&apos;numeric&apos;], input[name=&apos;pin&apos;] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\gaytri\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62358}, goog:processID: 57472, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62358/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c99860c9348cb8e3b2183a69716da75a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\gaytri\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62391}, goog:processID: 57476, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62391/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4078d7fccd71f3d7f3cdd71b9813d1c8
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.homeyhutz.base.BasePage.waitForVisibility(BasePage.java:21)
@@ -41,6 +27,7 @@ Session ID: c99860c9348cb8e3b2183a69716da75a
 	at com.homeyhutz.tests.SignupFlowTest.signupFlowTest(SignupFlowTest.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.homeyhutz.tests.HomePageTest#verifyHomePageLoginNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.homeyhutz.tests.HomePageTest#verifyHomePageLoginNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.homeyhutz.tests.LoginFlowTest#verifyUserCanProceedTillOtpSubmit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -38,21 +38,24 @@ public class BaseTest {
     }
 
     // Runs AFTER every test
-    @AfterMethod
-    public void tearDown(ITestResult result) {
+  @AfterMethod
+public void tearDown(ITestResult result) {
 
-        // If test FAILED
-        if (ITestResult.FAILURE == result.getStatus()) {
-
-            // Take screenshot
-            takeScreenshot(result.getName());
+    try {
+        if (result.getStatus() == ITestResult.FAILURE) {
+            if (driver != null) {
+                takeScreenshot(result.getName());
+            }
         }
-
-        // Close browser
+    } catch (Exception e) {
+        System.out.println("Screenshot skipped: " + e.getMessage());
+    } finally {
         if (driver != null) {
             driver.quit();
         }
     }
+}
+
 
     // Method to take screenshot
     private void takeScreenshot(String testName) {

@@ -10,13 +10,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.homeyhutz.tests.SignupFlowTest -->
-      <class name="com.homeyhutz.tests.LoginFlowTest">
-        <methods>
-          <include name="verifyUserCanProceedTillOtpSubmit"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.homeyhutz.tests.LoginFlowTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
