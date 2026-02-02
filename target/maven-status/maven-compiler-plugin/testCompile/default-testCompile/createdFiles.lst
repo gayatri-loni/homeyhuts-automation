@@ -1,0 +1,9 @@
+com\homeyhutz\base\BasePage.class
+com\homeyhutz\base\BaseTest.class
+com\homeyhutz\pages\OtpPage.class
+com\homeyhutz\tests\LoginFlowTest.class
+com\homeyhutz\pages\SignupPage.class
+com\homeyhutz\tests\SignupFlowTest.class
+com\homeyhutz\pages\HomePage.class
+com\homeyhutz\pages\LoginPage.class
+com\homeyhutz\tests\HomePageTest.class
