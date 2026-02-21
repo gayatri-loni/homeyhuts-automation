@@ -23,7 +23,6 @@ public class BaseTest {
     // Runs BEFORE every test
     @BeforeMethod
     public void setUp() {
-
         // Setup ChromeDriver automatically
         WebDriverManager.chromedriver().setup();
 
@@ -38,49 +37,35 @@ public class BaseTest {
     }
 
     // Runs AFTER every test
-  @AfterMethod
-public void tearDown(ITestResult result) {
-
-    try {
-        if (result.getStatus() == ITestResult.FAILURE) {
-            if (driver != null) {
+    @AfterMethod
+    public void tearDown(ITestResult result) {
+        try {
+            if (result.getStatus() == ITestResult.FAILURE && driver != null) {
                 takeScreenshot(result.getName());
             }
-        }
-    } catch (Exception e) {
-        System.out.println("Screenshot skipped: " + e.getMessage());
-    } finally {
-        if (driver != null) {
-            driver.quit();
+        } catch (Exception e) {
+            System.out.println("Screenshot skipped: " + e.getMessage());
+        } finally {
+            if (driver != null) {
+                driver.quit();
+            }
         }
     }
-}
-
 
     // Method to take screenshot
     private void takeScreenshot(String testName) {
-
         try {
-            // Convert WebDriver to TakesScreenshot
             TakesScreenshot screenshot = (TakesScreenshot) driver;
-
-            // Capture screenshot as file
             File source = screenshot.getScreenshotAs(OutputType.FILE);
 
-            // Create screenshots folder & file name
             File destination = new File(
                     "screenshots/" + testName + "_" + System.currentTimeMillis() + ".png"
             );
 
-            // Create folder if not exists
             destination.getParentFile().mkdirs();
-
-            // Copy screenshot to destination
             Files.copy(source.toPath(), destination.toPath());
 
-            // Print screenshot path in console
             System.out.println("Screenshot saved at: " + destination.getAbsolutePath());
-
         } catch (IOException e) {
             e.printStackTrace();
         }

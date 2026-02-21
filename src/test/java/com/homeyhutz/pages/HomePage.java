@@ -7,38 +7,40 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage {
 
-    // Locators
     private By logo = By.cssSelector("img[alt='header-logo']");
     private By loginIcon = By.cssSelector(".inline-flex > .flex");
     private By loginTextButton = By.cssSelector(".flex.font-semibold > .cursor-pointer > .text-sm");
     private By phoneInput = By.cssSelector("input[name='phoneOrEmail']");
 
     public HomePage(WebDriver driver, WebDriverWait wait) {
-        super(driver, wait); // 🔔 calls BasePage constructor
+        super(driver, wait);
     }
 
     public void openHomePage() {
         driver.get("https://uat.homeyhutz.com/");
+        waitForVisibility(By.tagName("body"));
     }
 
     public void waitForHomePageToLoad() {
         waitForVisibility(logo);
     }
 
-   public void clickLoginIcon() {
-    retryClick(loginIcon, 3);
-}
+    public void clickLoginIcon() {
+        retryClick(loginIcon, 3);
+    }
 
-public void clickLoginText() {
-    retryClick(loginTextButton, 3);
-}
+    public void clickLoginText() {
+        retryClick(loginTextButton, 3);
+    }
 
-public void waitForLoginUiToOpen() {
-    retryWaitUntilPresent(phoneInput, 5);
-}
+    public void waitForLoginUiToOpen() {
+        retryWaitUntilPresent(phoneInput, 5);
+    }
 
-
-    public boolean isLogoDisplayed() {
-        return waitForVisibility(logo).isDisplayed();
+    // Used in SignupFlowTest
+    public void openLoginPopup() {
+        clickLoginIcon();
+        clickLoginText();
+        retryWaitUntilPresent(phoneInput, 5);
     }
 }

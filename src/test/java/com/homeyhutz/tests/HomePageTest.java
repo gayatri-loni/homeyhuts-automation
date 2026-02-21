@@ -10,7 +10,6 @@ public class HomePageTest extends BaseTest {
 
     @Test
     public void verifyHomePageLoginNavigation() {
-
         HomePage homePage = new HomePage(driver, wait);
 
         // Open home page
@@ -21,10 +20,10 @@ public class HomePageTest extends BaseTest {
         homePage.clickLoginIcon();
         homePage.clickLoginText();
 
-        // ✅ WAIT like Cypress (retry until UI appears)
+        // Wait until login UI appears
         homePage.waitForLoginUiToOpen();
 
-        // ✅ Assertion AFTER wait
+        // Assertion AFTER wait
         Assert.assertTrue(
                 driver.findElements(By.cssSelector("input[name='phoneOrEmail']")).size() > 0,
                 "Login UI did not open after clicking login"

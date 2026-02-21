@@ -11,7 +11,6 @@ public class LoginFlowTest extends BaseTest {
 
     @Test
     public void verifyUserCanProceedTillOtpSubmit() {
-
         HomePage homePage = new HomePage(driver, wait);
         LoginPage loginPage = new LoginPage(driver, wait);
         OtpPage otpPage = new OtpPage(driver, wait);
@@ -38,5 +37,12 @@ public class LoginFlowTest extends BaseTest {
                 driver.getPageSource().length() > 0,
                 "Page did not respond after OTP submit"
         );
+
+        // Wait 5 seconds before browser closes automatically
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 }

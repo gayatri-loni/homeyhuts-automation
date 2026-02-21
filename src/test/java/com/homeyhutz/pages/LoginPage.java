@@ -10,6 +10,7 @@ public class LoginPage extends BasePage {
     private By phoneInput = By.cssSelector(
             "input[name='phoneOrEmail'], input[type='text'], input[type='tel']"
     );
+
     private By continueButton = By.xpath("//button[contains(text(),'Continue')]");
 
     public LoginPage(WebDriver driver, WebDriverWait wait) {
@@ -17,7 +18,7 @@ public class LoginPage extends BasePage {
     }
 
     public void waitForLoginPage() {
-    retryWaitUntilPresent(phoneInput, 5);
+        retryWaitUntilPresent(phoneInput, 5);
     }
 
     public void enterPhoneNumber(String phone) {
@@ -25,6 +26,6 @@ public class LoginPage extends BasePage {
     }
 
     public void clickContinue() {
-    retryClick(continueButton, 3);
+        retryClick(continueButton, 3);
     }
 }

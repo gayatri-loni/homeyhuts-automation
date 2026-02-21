@@ -1,9 +1,12 @@
 C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\base\BasePage.java
 C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\base\BaseTest.java
 C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\pages\HomePage.java
+C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\pages\HostListingPage.java
+C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\pages\HostRegistrationPage.java
 C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\pages\LoginPage.java
 C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\pages\OtpPage.java
-C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\pages\SignupPage.java
+C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\pages\RegistrationPage.java
 C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\tests\HomePageTest.java
 C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\tests\LoginFlowTest.java
+C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\tests\PropertyListingFlowTest.java
 C:\Selenium\HomeyHutz-Java-Automation\src\test\java\com\homeyhutz\tests\SignupFlowTest.java
