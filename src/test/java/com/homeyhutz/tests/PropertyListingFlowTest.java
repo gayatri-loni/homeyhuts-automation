@@ -129,6 +129,9 @@ public class PropertyListingFlowTest extends BaseTest {
                 System.out.println("✓ Checkin-checkout handled\n");
                 
                 Thread.sleep(3000);
+
+
+                
                 
                 // Step 14: Handle security and house rules
                 System.out.println("========== STEP 14: HANDLE SECURITY AND HOUSE RULES ==========");
