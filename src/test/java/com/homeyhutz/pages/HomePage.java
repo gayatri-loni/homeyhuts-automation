@@ -40,7 +40,11 @@ public class HomePage extends BasePage {
     // Used in SignupFlowTest
     public void openLoginPopup() {
         clickLoginIcon();
-        clickLoginText();
+        try {
+            clickLoginText();
+        } catch (Exception ignored) {
+            // Some builds open login directly from icon click.
+        }
         retryWaitUntilPresent(phoneInput, 5);
     }
 }

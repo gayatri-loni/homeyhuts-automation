@@ -3,13 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.homeyhutz.tests.PropertyListingFlowTest">
+      <class name="com.homeyhutz.tests.BookingFlowTest">
         <methods>
+          <include name="verifyBookingFlowTillHostAccept"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="newUserCompletesPropertyListingFlow"/>
         </methods>
-      </class> <!-- com.homeyhutz.tests.PropertyListingFlowTest -->
+      </class> <!-- com.homeyhutz.tests.BookingFlowTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
