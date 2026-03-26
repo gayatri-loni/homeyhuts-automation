@@ -74,16 +74,50 @@
 ## Step Details
 
 - **Step 1: Setup Environment**
-  - **Status**: ⏳ In Progress
+  - **Status**: ✅ Completed
+  - **Changes Made**: No changes — all required tools already present
+  - **Review Code Changes**: N/A
+  - **Verification**:
+    - Command: `#appmod-list-jdks` / `#appmod-list-mavens`
+    - JDK: N/A
+    - Build tool: `C:\Program Files\Apache\Maven\apache-maven-3.9.12\bin`
+    - Result: SUCCESS — JDK 25.0.1 at `C:\Program Files\Java\jdk-25\bin`, Maven 3.9.12 confirmed
+  - **Deferred Work**: None
+  - **Commit**: 8bd4fa0 - Step 1: Setup Environment - Compile: N/A
 
 - **Step 2: Setup Baseline**
-  - **Status**: 🔘 Not Started
+  - **Status**: ✅ Completed
+  - **Changes Made**: No code changes — baseline measurement only
+  - **Verification**:
+    - Command: `mvn clean test-compile` then `mvn clean test`
+    - JDK: `C:\Users\gaytri\.jdk\jdk-21.0.8`
+    - Build tool: `C:\Program Files\Apache\Maven\apache-maven-3.9.12\bin`
+    - Result: Compile SUCCESS; Tests: 5/6 passed, 1 pre-existing failure (`BookingFlowTest` — live UAT issue)
+    - Notes: Baseline = 5/6. The failing test fails due to live environment state, not code issues.
+  - **Deferred Work**: None
+  - **Commit**: N/A (no file changes in this step)
 
 - **Step 3: Upgrade Java to 25 and Update All Dependencies**
-  - **Status**: 🔘 Not Started
+  - **Status**: ✅ Completed
+  - **Changes Made**:
+    - `maven.compiler.source/target` updated 21 → 25
+    - Selenium 4.28.0 → 4.33.0, TestNG 7.9.0 → 7.11.0, WebDriverManager 5.7.0 → 6.1.0
+    - SLF4J 1.7.36 → 2.0.17 (EOL migration)
+    - Added `maven-compiler-plugin` 3.15.0 and `maven-surefire-plugin` 3.5.5
+    - Moved `selenium.version` property to top-level `<properties>`
+  - **Review Code Changes**:
+    - Sufficiency: ✅ All required changes present
+    - Necessity: ✅ All changes necessary; functional behavior preserved; no security controls affected
+  - **Verification**:
+    - Command: `mvn clean test-compile`
+    - JDK: `C:\Program Files\Java\jdk-25`
+    - Build tool: `C:\Program Files\Apache\Maven\apache-maven-3.9.12\bin`
+    - Result: SUCCESS — 20 source files compiled with `javac [debug target 25]`
+  - **Deferred Work**: None
+  - **Commit**: cc49196 - Step 3: Upgrade Java to 25 and update all dependencies - Compile: SUCCESS
 
 - **Step 4: Final Validation**
-  - **Status**: 🔘 Not Started
+  - **Status**: ⏳ In Progress
 
   ---
 
