@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 05 19:12:44 IST 2026</td>
+<td>Started on:</td><td>Wed May 20 14:16:03 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>161 seconds (161077 ms)</td>
+<tr><td>Total time:</td><td>374 seconds (374811 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.homeyhutz.tests.BookingFlowTest.verifyBookingFlowTillHostAccept()'><b>verifyBookingFlowTillHostAccept</b><br>Test class: com.homeyhutz.tests.BookingFlowTest</td>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.priceDisplayedWithGst()'><b>priceDisplayedWithGst</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Price per night is visible on the property page booking widget</td>
 <td></td>
-<td>158</td>
-<td>com.homeyhutz.tests.BookingFlowTest@7f77e91b</td></tr>
+<td>8</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.reserveWithoutLoginRedirectsAndReturnsToCheckout()'><b>reserveWithoutLoginRedirectsAndReturnsToCheckout</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Unauthenticated Reserve: login page shows, login succeeds, redirected to checkout (not home)</td>
+<td></td>
+<td>9</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.fullBookingWithNetbanking()'><b>fullBookingWithNetbanking</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Full booking flow: login → property → Book Now → Razorpay netbanking → confirm</td>
+<td></td>
+<td>53</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.authenticatedUserReachesCheckout()'><b>authenticatedUserReachesCheckout</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Logged-in user clicking Book Now reaches the checkout / booking summary page</td>
+<td></td>
+<td>8</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.pastDateCannotBeSelected()'><b>pastDateCannotBeSelected</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Past dates are disabled in the property page date picker — cannot be selected</td>
+<td></td>
+<td>32</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.checkoutPageShowsPriceBreakdown()'><b>checkoutPageShowsPriceBreakdown</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Checkout page shows total amount and GST breakdown</td>
+<td></td>
+<td>6</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.unauthenticatedBookingRedirectsToAuth()'><b>unauthenticatedBookingRedirectsToAuth</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Clicking Book Now without login redirects to the authentication page</td>
+<td></td>
+<td>5</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.dateSelectionWorks()'><b>dateSelectionWorks</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Check-in and check-out dates can be selected on the property page calendar picker</td>
+<td></td>
+<td>80</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.propertyPageLoadsDirect()'><b>propertyPageLoadsDirect</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Property page loads correctly via direct URL — title, price, Book Now visible</td>
+<td></td>
+<td>10</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.invalidDateRangeRejected()'><b>invalidDateRangeRejected</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Setting check-out before check-in shows an error or blocks the booking</td>
+<td></td>
+<td>4</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.fullE2eReserveLoginAndCheckout()'><b>fullE2eReserveLoginAndCheckout</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Full E2E: Home page → property → Reserve without login → login-page validations → OTP login → redirected back to checkout</td>
+<td></td>
+<td>17</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.guestCountWorks()'><b>guestCountWorks</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Guest count can be incremented and decremented via the booking widget</td>
+<td></td>
+<td>92</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.propertyPageLoadsViaSearch()'><b>propertyPageLoadsViaSearch</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Property page reachable via home page search — enter city, select property</td>
+<td></td>
+<td>13</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
+<tr>
+<td title='com.homeyhutz.playwright.tests.TC09_BookingFlowTest.reserveWithoutDatesShowsValidation()'><b>reserveWithoutDatesShowsValidation</b><br>Test class: com.homeyhutz.playwright.tests.TC09_BookingFlowTest<br>Test method: Clicking Reserve without selecting dates should show validation — not navigate to checkout</td>
+<td></td>
+<td>5</td>
+<td>com.homeyhutz.playwright.tests.TC09_BookingFlowTest@5ad851c9</td></tr>
 </table><p>
 </body>
 </html>

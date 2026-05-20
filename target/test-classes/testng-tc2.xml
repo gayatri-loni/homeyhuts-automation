@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BlockDate TC2 Only" verbose="2">
+  <test name="TC2 - Unified Calendar Shows Blocked Date">
+    <classes>
+      <class name="com.homeyhutz.tests.BlockDateTest">
+        <methods>
+          <include name="verifyBlockedDateInUnifiedCalendar"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

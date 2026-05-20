@@ -1,32 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-05T19:12:44 IST" name="Surefire suite" finished-at="2026-03-05T19:15:26 IST" duration-ms="161077">
+  <suite started-at="2026-05-20T14:22:21 IST" name="BlockDate Suite" finished-at="2026-05-20T14:24:59 IST" duration-ms="158004">
     <groups>
     </groups>
-    <test started-at="2026-03-05T19:12:44 IST" name="Surefire test" finished-at="2026-03-05T19:15:26 IST" duration-ms="161077">
-      <class name="com.homeyhutz.tests.BookingFlowTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.BookingFlowTest@7f77e91b]" started-at="2026-03-05T19:12:45 IST" name="setUp" finished-at="2026-03-05T19:12:47 IST" duration-ms="2536" status="PASS">
+    <test started-at="2026-05-20T14:22:21 IST" name="Block Date - Full Flow" finished-at="2026-05-20T14:24:59 IST" duration-ms="158004">
+      <class name="com.homeyhutz.tests.BlockDateTest">
+        <test-method is-config="true" signature="blockDateOnce()[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:22:21 IST" name="blockDateOnce" finished-at="2026-05-20T14:23:08 IST" duration-ms="47001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blockDateOnce -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:23:08 IST" name="setUp" finished-at="2026-05-20T14:23:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyBookingFlowTillHostAccept()[pri:0, instance:com.homeyhutz.tests.BookingFlowTest@7f77e91b]" started-at="2026-03-05T19:12:47 IST" name="verifyBookingFlowTillHostAccept" finished-at="2026-03-05T19:15:26 IST" duration-ms="158484" status="PASS">
+        <test-method signature="hostCalendarShowsBlockedDate()[pri:1, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:23:08 IST" name="hostCalendarShowsBlockedDate" finished-at="2026-05-20T14:23:29 IST" duration-ms="21188" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyBookingFlowTillHostAccept -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.BookingFlowTest@7f77e91b]" started-at="2026-03-05T19:15:26 IST" name="tearDown" finished-at="2026-03-05T19:15:26 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- hostCalendarShowsBlockedDate -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:23:29 IST" name="tearDown" finished-at="2026-05-20T14:23:29 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyBookingFlowTillHostAccept status=SUCCESS method=BookingFlowTest.verifyBookingFlowTillHostAccept()[pri:0, instance:com.homeyhutz.tests.BookingFlowTest@7f77e91b] output={null}]]]>
+                <![CDATA[[TestResult name=hostCalendarShowsBlockedDate status=SUCCESS method=BlockDateTest.hostCalendarShowsBlockedDate()[pri:1, instance:com.homeyhutz.tests.BlockDateTest@9225652] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.homeyhutz.tests.BookingFlowTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        <test-method signature="verifyBlockedDateInUnifiedCalendar()[pri:2, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:23:29 IST" name="verifyBlockedDateInUnifiedCalendar" finished-at="2026-05-20T14:23:42 IST" duration-ms="13366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlockedDateInUnifiedCalendar -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:23:29 IST" name="setUp" finished-at="2026-05-20T14:23:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:23:42 IST" name="tearDown" finished-at="2026-05-20T14:23:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBlockedDateInUnifiedCalendar status=SUCCESS method=BlockDateTest.verifyBlockedDateInUnifiedCalendar()[pri:2, instance:com.homeyhutz.tests.BlockDateTest@9225652] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:23:42 IST" name="setUp" finished-at="2026-05-20T14:23:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBlockedDateInManualBookingCalendar()[pri:3, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:23:42 IST" name="verifyBlockedDateInManualBookingCalendar" finished-at="2026-05-20T14:24:09 IST" duration-ms="27020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlockedDateInManualBookingCalendar -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:09 IST" name="tearDown" finished-at="2026-05-20T14:24:09 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBlockedDateInManualBookingCalendar status=SUCCESS method=BlockDateTest.verifyBlockedDateInManualBookingCalendar()[pri:3, instance:com.homeyhutz.tests.BlockDateTest@9225652] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:09 IST" name="setUp" finished-at="2026-05-20T14:24:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBlockedDateInChannelManagerCalendar()[pri:4, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:09 IST" name="verifyBlockedDateInChannelManagerCalendar" finished-at="2026-05-20T14:24:19 IST" duration-ms="9488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlockedDateInChannelManagerCalendar -->
+        <test-method signature="verifyDateBlockedInPropertyCalendarAdminPanel()[pri:5, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:19 IST" name="verifyDateBlockedInPropertyCalendarAdminPanel" finished-at="2026-05-20T14:24:29 IST" duration-ms="9721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDateBlockedInPropertyCalendarAdminPanel -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:19 IST" name="setUp" finished-at="2026-05-20T14:24:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:19 IST" name="tearDown" finished-at="2026-05-20T14:24:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBlockedDateInChannelManagerCalendar status=SUCCESS method=BlockDateTest.verifyBlockedDateInChannelManagerCalendar()[pri:4, instance:com.homeyhutz.tests.BlockDateTest@9225652] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:29 IST" name="tearDown" finished-at="2026-05-20T14:24:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDateBlockedInPropertyCalendarAdminPanel status=SUCCESS method=BlockDateTest.verifyDateBlockedInPropertyCalendarAdminPanel()[pri:5, instance:com.homeyhutz.tests.BlockDateTest@9225652] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyDateBlockedInInventoryRatesAdminPanel()[pri:6, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:29 IST" name="verifyDateBlockedInInventoryRatesAdminPanel" finished-at="2026-05-20T14:24:42 IST" duration-ms="13047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDateBlockedInInventoryRatesAdminPanel -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:29 IST" name="setUp" finished-at="2026-05-20T14:24:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:42 IST" name="tearDown" finished-at="2026-05-20T14:24:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDateBlockedInInventoryRatesAdminPanel status=SUCCESS method=BlockDateTest.verifyDateBlockedInInventoryRatesAdminPanel()[pri:6, instance:com.homeyhutz.tests.BlockDateTest@9225652] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyBlockedDateInDirectBookingCalendar()[pri:7, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:42 IST" name="verifyBlockedDateInDirectBookingCalendar" finished-at="2026-05-20T14:24:59 IST" duration-ms="16845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBlockedDateInDirectBookingCalendar -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:42 IST" name="setUp" finished-at="2026-05-20T14:24:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:59 IST" name="tearDown" finished-at="2026-05-20T14:24:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBlockedDateInDirectBookingCalendar status=SUCCESS method=BlockDateTest.verifyBlockedDateInDirectBookingCalendar()[pri:7, instance:com.homeyhutz.tests.BlockDateTest@9225652] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeSharedSession()[pri:0, instance:com.homeyhutz.tests.BlockDateTest@9225652]" started-at="2026-05-20T14:24:59 IST" name="closeSharedSession" finished-at="2026-05-20T14:24:59 IST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSharedSession -->
+      </class> <!-- com.homeyhutz.tests.BlockDateTest -->
+    </test> <!-- Block Date - Full Flow -->
+  </suite> <!-- BlockDate Suite -->
 </testng-results>

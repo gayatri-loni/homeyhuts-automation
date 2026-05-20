@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BlockDate TC1 Only" verbose="2">
+  <test name="TC1 - Host Calendar Shows Blocked Date">
+    <classes>
+      <class name="com.homeyhutz.tests.BlockDateTest">
+        <methods>
+          <include name="hostCalendarShowsBlockedDate"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HomeyHutz Suite" verbose="2" thread-count="1">
+
+  <!-- ── Smoke tests (fast, no real booking flow) ─────────────────────────── -->
+  <test name="Smoke Tests">
+    <classes>
+      <class name="com.homeyhutz.tests.HomePageTest"/>
+      <class name="com.homeyhutz.tests.LoginFlowTest"/>
+      <class name="com.homeyhutz.tests.SignupFlowTest"/>
+    </classes>
+  </test>
+
+  <!-- ── End-to-end booking flows ─────────────────────────────────────────── -->
+  <test name="Booking Flow Tests">
+    <classes>
+      <class name="com.homeyhutz.tests.PropertyListingFlowTest"/>
+      <class name="com.homeyhutz.tests.BookingFlowTest"/>
+      <class name="com.homeyhutz.tests.HostReservationNavigationTest"/>
+    </classes>
+  </test>
+
+  <!-- ── Calendar block / pricing sync flows ──────────────────────────────── -->
+  <test name="Calendar and Pricing Tests">
+    <classes>
+      <class name="com.homeyhutz.tests.BlockDateTest"/>
+      <class name="com.homeyhutz.tests.UpdatePricingTest"/>
+    </classes>
+  </test>
+
+</suite>

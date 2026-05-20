@@ -28,9 +28,6 @@ public class HostListingPage extends BasePage {
             By.xpath("//button[contains(@class,'bg-brand') and contains(@class,'rounded') and contains(.,'Next')]");
     private By nextBtnTextOnly = By.xpath("//button[contains(.,'Next')]");
 
-    private By propertyTypeHut = By.xpath("//*[contains(text(),'Hut')]");
-    private By roomTypeSharedRoom = By.xpath("//*[contains(text(),'Shared Room')]");
-    private By propertyOwner = By.xpath("//*[contains(text(),'Property Owner')]");
     private By addressInput = By.xpath("//input[@placeholder='Enter Your Address']");
     private By addressOptionMaharashtra =
             By.xpath("//span[contains(text(),'Maharashtra, India')]");
@@ -189,13 +186,103 @@ public class HostListingPage extends BasePage {
     }
 
     public void selectPropertyBasics() {
-        waitForClickability(propertyTypeHut).click();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Try several locator variants to find the Hut property type option
+        By[] hutLocators = {
+            By.xpath("//*[contains(text(),'Hut')]"),
+            By.xpath("//*[contains(translate(normalize-space(.),'hut','HUT'),'HUT')]"),
+            By.xpath("//div[contains(@class,'cursor-pointer') and contains(.,'Hut')]"),
+            By.xpath("//label[contains(.,'Hut')]"),
+            By.xpath("//*[@role='radio' and contains(.,'Hut')]")
+        };
+        boolean hutClicked = false;
+        for (int attempt = 0; attempt < 3 && !hutClicked; attempt++) {
+            for (By loc : hutLocators) {
+                try {
+                    WebElement el = wait.until(d -> {
+                        for (WebElement e : d.findElements(loc)) {
+                            try { if (e.isDisplayed() && e.isEnabled()) return e; } catch (Exception ignored) {}
+                        }
+                        return null;
+                    });
+                    js.executeScript("arguments[0].scrollIntoView({behavior:'smooth',block:'center'});", el);
+                    try { Thread.sleep(500); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
+                    try { el.click(); } catch (ElementClickInterceptedException e) { js.executeScript("arguments[0].click();", el); }
+                    hutClicked = true;
+                    break;
+                } catch (Exception ignored) {}
+            }
+            if (!hutClicked) {
+                // May need an extra Next click to get past a preceding step
+                try { click(nextBtnGeneric); } catch (Exception ignored) { try { click(nextBtnTextOnly); } catch (Exception ignored2) {} }
+                try { Thread.sleep(1500); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
+            }
+        }
+        if (!hutClicked) throw new RuntimeException("Could not find and click Hut property type option");
+
         click(By.xpath("//button[contains(@class,'bg-brand') and contains(.,'Next')]"));
 
-        waitForClickability(roomTypeSharedRoom).click();
+        // Shared Room — retry with JS click if needed
+        By[] sharedRoomLocators = {
+            By.xpath("//*[contains(text(),'Shared Room')]"),
+            By.xpath("//div[contains(@class,'cursor-pointer') and contains(.,'Shared Room')]"),
+            By.xpath("//label[contains(.,'Shared Room')]"),
+            By.xpath("//*[@role='radio' and contains(.,'Shared Room')]")
+        };
+        boolean sharedRoomClicked = false;
+        for (int attempt = 0; attempt < 3 && !sharedRoomClicked; attempt++) {
+            for (By loc : sharedRoomLocators) {
+                try {
+                    WebElement el = wait.until(d -> {
+                        for (WebElement e : d.findElements(loc)) {
+                            try { if (e.isDisplayed() && e.isEnabled()) return e; } catch (Exception ignored) {}
+                        }
+                        return null;
+                    });
+                    js.executeScript("arguments[0].scrollIntoView({behavior:'smooth',block:'center'});", el);
+                    try { Thread.sleep(500); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
+                    try { el.click(); } catch (ElementClickInterceptedException e) { js.executeScript("arguments[0].click();", el); }
+                    sharedRoomClicked = true;
+                    break;
+                } catch (Exception ignored) {}
+            }
+            if (!sharedRoomClicked) {
+                try { Thread.sleep(1500); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
+            }
+        }
+        if (!sharedRoomClicked) throw new RuntimeException("Could not find and click Shared Room option");
         clickNext();
 
-        waitForClickability(propertyOwner).click();
+        // Property Owner — retry with JS click if needed
+        By[] propertyOwnerLocators = {
+            By.xpath("//*[contains(text(),'Property Owner')]"),
+            By.xpath("//div[contains(@class,'cursor-pointer') and contains(.,'Property Owner')]"),
+            By.xpath("//label[contains(.,'Property Owner')]"),
+            By.xpath("//*[@role='radio' and contains(.,'Property Owner')]")
+        };
+        boolean propertyOwnerClicked = false;
+        for (int attempt = 0; attempt < 3 && !propertyOwnerClicked; attempt++) {
+            for (By loc : propertyOwnerLocators) {
+                try {
+                    WebElement el = wait.until(d -> {
+                        for (WebElement e : d.findElements(loc)) {
+                            try { if (e.isDisplayed() && e.isEnabled()) return e; } catch (Exception ignored) {}
+                        }
+                        return null;
+                    });
+                    js.executeScript("arguments[0].scrollIntoView({behavior:'smooth',block:'center'});", el);
+                    try { Thread.sleep(500); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
+                    try { el.click(); } catch (ElementClickInterceptedException e) { js.executeScript("arguments[0].click();", el); }
+                    propertyOwnerClicked = true;
+                    break;
+                } catch (Exception ignored) {}
+            }
+            if (!propertyOwnerClicked) {
+                try { Thread.sleep(1500); } catch (InterruptedException ie) { Thread.currentThread().interrupt(); }
+            }
+        }
+        if (!propertyOwnerClicked) throw new RuntimeException("Could not find and click Property Owner option");
         clickNext();
     }
 

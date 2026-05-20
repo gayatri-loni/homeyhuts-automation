@@ -69,11 +69,12 @@ public class BasePage {
     protected void logDebugInfo(String message) {
         System.out.println("\n=== DEBUG INFO ===");
         System.out.println("Message: " + message);
-        System.out.println("Current URL: " + getCurrentUrl());
-        System.out.println("Page Title: " + driver.getTitle());
-        
+        try { System.out.println("Current URL: " + getCurrentUrl()); } catch (Exception ignored) {}
+        try { System.out.println("Page Title: " + driver.getTitle()); } catch (Exception ignored) {}
+
         // Log all input fields on the page
-        java.util.List<WebElement> inputs = driver.findElements(By.tagName("input"));
+        java.util.List<WebElement> inputs;
+        try { inputs = driver.findElements(By.tagName("input")); } catch (Exception ignored) { System.out.println("===================\n"); return; }
         System.out.println("Found " + inputs.size() + " input fields on page:");
         for (int i = 0; i < inputs.size(); i++) {
             WebElement input = inputs.get(i);
