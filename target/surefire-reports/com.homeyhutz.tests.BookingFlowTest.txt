@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.homeyhutz.tests.BookingFlowTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 161.7 s -- in com.homeyhutz.tests.BookingFlowTest

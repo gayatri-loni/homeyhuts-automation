@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--
+  Dedicated suite for BlockDateTest.
+  Run with:  mvn test -DsuiteXmlFile=src/test/resources/testng-blockdate.xml
+-->
+<suite name="BlockDate Suite" verbose="2" preserve-order="true">
+
+  <test name="Block Date - Full Flow" preserve-order="true">
+    <classes>
+      <class name="com.homeyhutz.tests.BlockDateTest">
+        <methods>
+          <include name="hostCalendarShowsBlockedDate"/>           <!-- TC1 -->
+          <include name="verifyBlockedDateInUnifiedCalendar"/>    <!-- TC2 -->
+          <include name="verifyBlockedDateInManualBookingCalendar"/> <!-- TC3 -->
+          <include name="verifyBlockedDateInChannelManagerCalendar"/> <!-- TC4 -->
+          <include name="verifyDateBlockedInPropertyCalendarAdminPanel"/> <!-- TC5 -->
+          <include name="verifyDateBlockedInInventoryRatesAdminPanel"/> <!-- TC6 -->
+          <include name="verifyBlockedDateInDirectBookingCalendar"/> <!-- TC7 -->
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+</suite>
