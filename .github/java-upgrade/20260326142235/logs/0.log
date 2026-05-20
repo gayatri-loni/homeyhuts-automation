@@ -1,0 +1,289 @@
+2026-03-26T14:22:35.742Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-03-26T14:22:35.743Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "event": "precheckCompleted",
+  "phase": "precheck",
+  "status": "succeeded"
+}}).
+2026-03-26T14:22:35.744Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:22:35.769Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'precheckCompleted' reported!\nSession ID: 20260326142235,\nSession Dir: c:\\Selenium\\HomeyHutz-Java-Automation\\.github\\java-upgrade\\20260326142235"
+}}).
+2026-03-26T14:22:35.769Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-03-26T14:23:08.720Z [INFO] ---------------------prepare appmod-list-jdks----------------------
+2026-03-26T14:23:08.721Z [INFO] [Tool.prepareInvocation]({name: appmod-list-jdks, input: {
+  "sessionId": "20260326142235"
+}}).
+2026-03-26T14:23:08.721Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:23:08.723Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-03-26T14:23:08.724Z [INFO] ----------------------prepared appmod-list-jdks----------------------
+2026-03-26T14:23:08.811Z [INFO] ----------------------invoke appmod-list-jdks----------------------
+2026-03-26T14:23:08.811Z [INFO] [Tool.invoke]({name: appmod-list-jdks, input: {
+  "sessionId": "20260326142235"
+}}).
+2026-03-26T14:23:08.812Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:23:09.353Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 17.0.16\n   📁 Path: C:\\Users\\gaytri\\.jdk\\jdk-17.0.16\\bin\n   🏷️ Source: install\n\n2. Java 21.0.8\n   📁 Path: C:\\Users\\gaytri\\.jdk\\jdk-21.0.8\\bin\n   🏷️ Source: install\n\n3. Java 25.0.1\n   📁 Path: C:\\Program Files\\Java\\jdk-25\\bin\n   🏷️ Source: PATH\n\nTotal: 3 JDK installation(s) found"
+}}).
+2026-03-26T14:23:09.353Z [INFO] ----------------------invoked appmod-list-jdks----------------------
+2026-03-26T14:23:09.379Z [INFO] ---------------------prepare appmod-list-mavens----------------------
+2026-03-26T14:23:09.380Z [INFO] [Tool.prepareInvocation]({name: appmod-list-mavens, input: {
+  "sessionId": "20260326142235"
+}}).
+2026-03-26T14:23:09.381Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:23:09.382Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-03-26T14:23:09.383Z [INFO] ----------------------prepared appmod-list-mavens----------------------
+2026-03-26T14:23:09.461Z [INFO] ----------------------invoke appmod-list-mavens----------------------
+2026-03-26T14:23:09.462Z [INFO] [Tool.invoke]({name: appmod-list-mavens, input: {
+  "sessionId": "20260326142235"
+}}).
+2026-03-26T14:23:09.463Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:23:09.472Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following maven installations in your system:\n\n1. 📁 Path: C:\\Program Files\\Apache\\Maven\\apache-maven-3.9.12\\bin\n   🏷️ Source: PATH\n\nTotal: 1 Maven installation(s) found"
+}}).
+2026-03-26T14:23:09.473Z [INFO] ----------------------invoked appmod-list-mavens----------------------
+2026-03-26T14:27:30.516Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-03-26T14:27:30.517Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "environmentAnalyzed",
+  "phase": "plan",
+  "sessionId": "20260326142235",
+  "status": "succeeded",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation"
+}}).
+2026-03-26T14:27:30.518Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:27:30.518Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-26T14:27:30.519Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-03-26T14:27:30.687Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-03-26T14:27:30.688Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "environmentAnalyzed",
+  "phase": "plan",
+  "sessionId": "20260326142235",
+  "status": "succeeded",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation"
+}}).
+2026-03-26T14:27:30.689Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:27:30.692Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentAnalyzed' reported!\nSession ID: 20260326142235,\nSession Dir: c:\\Selenium\\HomeyHutz-Java-Automation\\.github\\java-upgrade\\20260326142235"
+}}).
+2026-03-26T14:27:30.692Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-03-26T14:27:35.714Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-03-26T14:27:35.715Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "dependenciesAnalyzed",
+  "phase": "plan",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:27:35.715Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:27:35.716Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-26T14:27:35.716Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-03-26T14:27:35.819Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-03-26T14:27:35.820Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "dependenciesAnalyzed",
+  "phase": "plan",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:27:35.820Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:27:35.822Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'dependenciesAnalyzed' reported!\nSession ID: 20260326142235,\nSession Dir: c:\\Selenium\\HomeyHutz-Java-Automation\\.github\\java-upgrade\\20260326142235"
+}}).
+2026-03-26T14:27:35.822Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-03-26T14:27:35.839Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-03-26T14:27:35.840Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "upgradePathDesigned",
+  "phase": "plan",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:27:35.841Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:27:35.841Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-26T14:27:35.842Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-03-26T14:27:35.966Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-03-26T14:27:35.967Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "upgradePathDesigned",
+  "phase": "plan",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:27:35.968Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:27:35.970Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradePathDesigned' reported!\nSession ID: 20260326142235,\nSession Dir: c:\\Selenium\\HomeyHutz-Java-Automation\\.github\\java-upgrade\\20260326142235"
+}}).
+2026-03-26T14:27:35.970Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-03-26T14:27:39.731Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-03-26T14:27:39.732Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:27:39.733Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:27:39.734Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-26T14:27:39.734Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-03-26T14:27:39.834Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-03-26T14:27:39.835Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:27:39.836Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:27:39.838Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planReviewed' reported!\nSession ID: 20260326142235,\nSession Dir: c:\\Selenium\\HomeyHutz-Java-Automation\\.github\\java-upgrade\\20260326142235"
+}}).
+2026-03-26T14:27:39.838Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-03-26T14:27:49.309Z [INFO] ---------------------prepare appmod-confirm-upgrade-plan----------------------
+2026-03-26T14:27:49.310Z [INFO] [Tool.prepareInvocation]({name: appmod-confirm-upgrade-plan, input: {
+  "sessionId": "20260326142235"
+}}).
+2026-03-26T14:27:49.311Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:27:49.312Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Review [upgrade plan](file:///c:/Selenium/HomeyHutz-Java-Automation/.github/java-upgrade/20260326142235/plan.md)",
+  "confirmationMessages": {
+    "title": "Plan generated",
+    "message": "Please review the generated plan and make any necessary adjustments before proceeding. You can modify the generated [`plan.md`](file:///c:/Selenium/HomeyHutz-Java-Automation/.github/java-upgrade/20260326142235/plan.md) directly."
+  }
+}}).
+2026-03-26T14:27:49.312Z [INFO] ----------------------prepared appmod-confirm-upgrade-plan----------------------
+2026-03-26T14:27:57.434Z [INFO] ----------------------invoke appmod-confirm-upgrade-plan----------------------
+2026-03-26T14:27:57.435Z [INFO] [Tool.invoke]({name: appmod-confirm-upgrade-plan, input: {
+  "sessionId": "20260326142235"
+}}).
+2026-03-26T14:27:57.436Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:27:57.436Z [INFO] Upgrade plan confirmed successfully.
+2026-03-26T14:27:57.441Z [INFO] [Tool.invoke]({result: {
+  "message": "Generated plan is reviewed and confirmed by the user! the upgrade process will start now and be tracked in markdown file: c:\\Selenium\\HomeyHutz-Java-Automation\\.github\\java-upgrade\\20260326142235\\progress.md."
+}}).
+2026-03-26T14:27:57.442Z [INFO] ----------------------invoked appmod-confirm-upgrade-plan----------------------
+2026-03-26T14:28:01.139Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-03-26T14:28:01.140Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planConfirmed",
+  "phase": "plan",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:28:01.141Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:28:01.142Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-26T14:28:01.142Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-03-26T14:28:01.295Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-03-26T14:28:01.296Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "planConfirmed",
+  "phase": "plan",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:28:01.297Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:28:01.300Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planConfirmed' reported!\nSession ID: 20260326142235,\nSession Dir: c:\\Selenium\\HomeyHutz-Java-Automation\\.github\\java-upgrade\\20260326142235"
+}}).
+2026-03-26T14:28:01.301Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-03-26T14:29:27.152Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-03-26T14:29:27.153Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:29:27.154Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:29:27.155Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-26T14:29:27.155Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-03-26T14:29:27.582Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-03-26T14:29:27.582Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded"
+}}).
+2026-03-26T14:29:27.583Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:29:27.738Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionStarted' reported!\nSession ID: 20260326142235,\nSession Dir: c:\\Selenium\\HomeyHutz-Java-Automation\\.github\\java-upgrade\\20260326142235"
+}}).
+2026-03-26T14:29:27.738Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-03-26T14:29:44.137Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-03-26T14:29:44.138Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded",
+  "details": {
+    "jdkPath": "C:\\Program Files\\Java\\jdk-25\\bin",
+    "buildToolPath": "C:\\Program Files\\Apache\\Maven\\apache-maven-3.9.12\\bin"
+  }
+}}).
+2026-03-26T14:29:44.139Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-26T14:29:44.140Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-26T14:29:44.140Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-03-26T14:29:44.292Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-03-26T14:29:44.293Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "c:\\Selenium\\HomeyHutz-Java-Automation",
+  "sessionId": "20260326142235",
+  "status": "succeeded",
+  "details": {
+    "jdkPath": "C:\\Program Files\\Java\\jdk-25\\bin",
+    "buildToolPath": "C:\\Program Files\\Apache\\Maven\\apache-maven-3.9.12\\bin"
+  }
+}}).
+2026-03-26T14:29:44.294Z [INFO] [Tool.invoke] do invoke.
+2026-03-26T14:29:44.296Z [INFO] Project c:\Selenium\HomeyHutz-Java-Automation is a maven project, try to get java version from pom.xml
+2026-03-26T14:29:44.299Z [INFO] Project java version: 21
+2026-03-26T14:29:44.300Z [INFO] Build tool type detected from path: mvn
+2026-03-26T14:29:44.301Z [INFO] Build tool type: mvn
+2026-03-26T14:29:44.302Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-25\\bin",
+  "version": "21"
+}
+2026-03-26T14:29:44.303Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Program Files\\Apache\\Maven\\apache-maven-3.9.12\\bin",
+  "version": ""
+}
+2026-03-26T14:29:44.303Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Program Files\\Apache\\Maven\\apache-maven-3.9.12\\bin",
+    "name": "mvn",
+    "version": ""
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Java\\jdk-25\\bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "HomeyHutz-Java-Automation",
+  "dir": "c:\\Selenium\\HomeyHutz-Java-Automation"
+}
+2026-03-26T14:29:56.520Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentSetup' reported!\nSession ID: 20260326142235,\nSession Dir: c:\\Selenium\\HomeyHutz-Java-Automation\\.github\\java-upgrade\\20260326142235"
+}}).
+2026-03-26T14:29:56.520Z [INFO] ----------------------invoked appmod-report-event----------------------

@@ -78,10 +78,10 @@ public class BasePage {
         for (int i = 0; i < inputs.size(); i++) {
             WebElement input = inputs.get(i);
             System.out.println("  Input " + (i + 1) + ":");
-            System.out.println("    - name: " + input.getAttribute("name"));
-            System.out.println("    - id: " + input.getAttribute("id"));
-            System.out.println("    - type: " + input.getAttribute("type"));
-            System.out.println("    - placeholder: " + input.getAttribute("placeholder"));
+            System.out.println("    - name: " + input.getDomAttribute("name"));
+            System.out.println("    - id: " + input.getDomAttribute("id"));
+            System.out.println("    - type: " + input.getDomAttribute("type"));
+            System.out.println("    - placeholder: " + input.getDomAttribute("placeholder"));
         }
         System.out.println("===================\n");
     }

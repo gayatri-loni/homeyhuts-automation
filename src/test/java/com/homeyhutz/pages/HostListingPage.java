@@ -36,8 +36,6 @@ public class HostListingPage extends BasePage {
             By.xpath("//span[contains(text(),'Maharashtra, India')]");
     private By houseNameInput = By.xpath("//input[@name='propertyAddress']");
 
-    private By browsePhotosTab = By.xpath("//span[contains(.,'Browse')]");
-    private By uploadIconImg = By.cssSelector("img[alt='upload-icon']");
     private By fileInput = By.cssSelector("input[type='file']");
         private By documentUploadText =
             By.xpath("//p[contains(@class,'text-xs') and contains(.,'Drag & drop a document')]" );
@@ -91,8 +89,6 @@ public class HostListingPage extends BasePage {
 
     private By hostGreetsYou = By.xpath("//*[contains(normalize-space(.),'Host greets you')]");
 
-    private By previewPropertyBtn = By.xpath("//button[contains(.,'Preview Your Property')]");
-    private By backFromPreview = By.xpath("//span[contains(.,'Back')]");
     private By finishBtn = By.xpath("//button[contains(.,'Finish')]");
     private By goToManagePropertiesBtn =
             By.xpath("//button[contains(.,'Go to Manage Properties')]");
@@ -189,25 +185,6 @@ public class HostListingPage extends BasePage {
             click(nextBtnGeneric);
         } catch (Exception e) {
             click(nextBtnTextOnly);
-        }
-    }
-
-    private boolean clickNextIfPresent() {
-        try {
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            java.util.List<WebElement> buttons = driver.findElements(nextBtnGeneric);
-            if (buttons.isEmpty()) {
-                buttons = driver.findElements(nextBtnTextOnly);
-            }
-            if (buttons.isEmpty()) {
-                return false;
-            }
-            WebElement button = buttons.get(0);
-            js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", button);
-            js.executeScript("arguments[0].click();", button);
-            return true;
-        } catch (Exception e) {
-            return false;
         }
     }
 
@@ -567,7 +544,22 @@ public class HostListingPage extends BasePage {
     }
 
     public void goToManageProperties() {
-        click(goToManagePropertiesBtn);
+        try {
+            WebElement button = waitForClickability(goToManagePropertiesBtn);
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", button);
+            Thread.sleep(700);
+
+            try {
+                button.click();
+            } catch (ElementClickInterceptedException e) {
+                System.out.println("Go to Manage Properties click intercepted, using JavaScript click");
+                js.executeScript("arguments[0].click();", button);
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new RuntimeException(e);
+        }
     }
 
     // ----- Admin portal actions -----

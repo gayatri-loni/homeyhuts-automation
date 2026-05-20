@@ -168,4 +168,3 @@ public class SignupFlowTest extends BaseTest {
         }
     }
 }
-

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.homeyhutz.tests.PropertyListingFlowTest" time="142.702" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="569.083" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="25"/>
-    <property name="webdriver.chrome.driver" value="C:\Users\gaytri\.cache\selenium\chromedriver\win64\145.0.7632.77\chromedriver.exe"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\gaytri\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Selenium\HomeyHutz-Java-Automation\target\test-classes;C:\Selenium\HomeyHutz-Java-Automation\target\classes;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-java\4.28.0\selenium-java-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-api\4.28.0\selenium-api-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.28.0\selenium-chrome-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.28.0\selenium-chromium-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-json\4.28.0\selenium-json-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.28.0\selenium-manager-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.28.0\selenium-devtools-v130-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.28.0\selenium-devtools-v131-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.28.0\selenium-devtools-v132-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.28.0\selenium-devtools-v85-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.28.0\selenium-edge-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.28.0\selenium-firefox-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-http\4.28.0\selenium-http-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.28.0\selenium-ie-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.28.0\selenium-remote-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\gaytri\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\gaytri\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\gaytri\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\gaytri\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\gaytri\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\gaytri\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\gaytri\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-os\4.28.0\selenium-os-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.28.0\selenium-safari-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-support\4.28.0\selenium-support-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\gaytri\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\gaytri\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\gaytri\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\gaytri\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\gaytri\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\gaytri\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\gaytri\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\gaytri\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\gaytri\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\gaytri\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\gaytri\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\gaytri\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\gaytri\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\gaytri\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\gaytri\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\gaytri\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\gaytri\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\gaytri\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\gaytri\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\gaytri\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\gaytri\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;"/>
@@ -16,9 +16,8 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25\bin"/>
-    <property name="sun.java.command" value="C:\Users\gaytri\AppData\Local\Temp\surefire14681292274530310955\surefirebooter-20260221230025075_3.jar C:\Users\gaytri\AppData\Local\Temp\surefire14681292274530310955 2026-02-21T23-00-24_857-jvmRun1 surefire-20260221230025075_1tmp surefire_0-20260221230025075_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\gaytri\AppData\Local\Temp\surefire2481874138476894355\surefirebooter-20260305103857281_3.jar C:\Users\gaytri\AppData\Local\Temp\surefire2481874138476894355 2026-03-05T10-38-57_037-jvmRun1 surefire-20260305103857281_1tmp surefire_0-20260305103857281_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="PropertyListingFlowTest"/>
     <property name="surefire.test.class.path" value="C:\Selenium\HomeyHutz-Java-Automation\target\test-classes;C:\Selenium\HomeyHutz-Java-Automation\target\classes;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-java\4.28.0\selenium-java-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-api\4.28.0\selenium-api-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.28.0\selenium-chrome-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.28.0\selenium-chromium-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-json\4.28.0\selenium-json-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.28.0\selenium-manager-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.28.0\selenium-devtools-v130-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.28.0\selenium-devtools-v131-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.28.0\selenium-devtools-v132-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.28.0\selenium-devtools-v85-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.28.0\selenium-edge-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.28.0\selenium-firefox-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-http\4.28.0\selenium-http-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.28.0\selenium-ie-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.28.0\selenium-remote-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\gaytri\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\gaytri\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\gaytri\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\gaytri\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\gaytri\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\gaytri\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\gaytri\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\gaytri\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-os\4.28.0\selenium-os-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.28.0\selenium-safari-driver-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\seleniumhq\selenium\selenium-support\4.28.0\selenium-support-4.28.0.jar;C:\Users\gaytri\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\gaytri\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\gaytri\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\gaytri\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\gaytri\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\gaytri\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\gaytri\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\gaytri\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\gaytri\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\gaytri\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\gaytri\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\gaytri\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\gaytri\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\gaytri\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\gaytri\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\gaytri\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\gaytri\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\gaytri\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\gaytri\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\gaytri\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\gaytri\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\gaytri\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\gaytri\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\gaytri"/>
@@ -32,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\gaytri\AppData\Local\Temp\surefire14681292274530310955\surefirebooter-20260221230025075_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\gaytri\AppData\Local\Temp\surefire2481874138476894355\surefirebooter-20260305103857281_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.1+8-LTS-27"/>
@@ -61,7 +60,147 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="newUserCompletesPropertyListingFlow" classname="com.homeyhutz.tests.PropertyListingFlowTest" time="138.711">
+  <testcase name="verifyBookingFlowTillHostAccept" classname="com.homeyhutz.tests.BookingFlowTest" time="209.804">
+    <system-out><![CDATA[Waiting for OTP page...
+✓ OTP page loaded - OTP input field found
+Entering OTP: 123456
+✓ OTP entered successfully: 123456
+Clicking Submit button...
+✓ Submit button clicked
+INFO: Email field not present on booking page, continuing.
+INFO: Card fields not visible; falling back to netbanking option.
+INFO: Netbanking selected via exact JS selector.
+INFO: Hard force-clicked Success button (top-level).
+Captured Booking Request ID for host acceptance: 4297
+Waiting for OTP page...
+✓ OTP page loaded - OTP input field found
+Entering OTP: 123456
+✓ OTP entered successfully: 123456
+Clicking Submit button...
+✓ Submit button clicked
+INFO: Booking ID search expected value: 4297
+INFO: Booking ID value after JS fallback: 4297
+INFO: Booking ID search expected value: 4297
+INFO: Booking ID value after JS fallback: 4297
+INFO: Booking ID search expected value: 4297
+INFO: Booking ID value after JS fallback: 4297
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\gaytri\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+Mar 05, 2026 10:39:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 05, 2026 10:39:02 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyHomePageLoginNavigation" classname="com.homeyhutz.tests.HomePageTest" time="3.533">
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\gaytri\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+Mar 05, 2026 10:42:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 05, 2026 10:42:33 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="hostCanOpenReservationSection" classname="com.homeyhutz.tests.HostReservationNavigationTest" time="156.891">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=145.0.7632.117)&#10;Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [da96f14812b8f97e7051651da9aab391, getCurrentUrl {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\gaytri\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50064}, goog:processID: 16132, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50064/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: da96f14812b8f97e7051651da9aab391" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.117)
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da96f14812b8f97e7051651da9aab391, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\gaytri\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50064}, goog:processID: 16132, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50064/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da96f14812b8f97e7051651da9aab391
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:325)
+	at com.homeyhutz.base.BasePage.getCurrentUrl(BasePage.java:35)
+	at com.homeyhutz.pages.OtpPage.waitForOtpPage(OtpPage.java:38)
+	at com.homeyhutz.tests.HostReservationNavigationTest.hostCanOpenReservationSection(HostReservationNavigationTest.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Waiting for OTP page...
+
+=== DEBUG INFO ===
+Message: Element not found with locator: By.cssSelector: input[name='pin'], input[inputmode='numeric'], input[name='otp'], input[type='password'], input[data-testid='otp']
+✗ Failed to find OTP input on OTP page
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\gaytri\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+Mar 05, 2026 10:42:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 05, 2026 10:42:38 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyUserCanProceedTillOtpSubmit" classname="com.homeyhutz.tests.LoginFlowTest" time="12.059">
+    <system-out><![CDATA[Screenshot skipped: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.117)
+Build info: version: '4.28.0', revision: 'ac342546e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da96f14812b8f97e7051651da9aab391, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\gaytri\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50064}, goog:processID: 16132, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50064/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da96f14812b8f97e7051651da9aab391
+Waiting for OTP page...
+✓ OTP page loaded - OTP input field found
+Entering OTP: 123456
+✓ OTP entered successfully: 123456
+Clicking Submit button...
+✓ Submit button clicked
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\gaytri\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+Mar 05, 2026 10:45:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 05, 2026 10:45:16 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="newUserCompletesPropertyListingFlow" classname="com.homeyhutz.tests.PropertyListingFlowTest" time="149.523">
     <system-out><![CDATA[
 ========== STEP 1: OPEN HOME AND CLICK LIST PROPERTY ==========
 ✓ Home page opened and list property link clicked
@@ -78,7 +217,7 @@
 ========== STEP 5: CLICK CONTINUE LISTING AFTER OTP ==========
 ✓ Continue Listing after OTP button clicked
 
-Current URL after OTP: https://uat.host.homeyhutz.com/listing?status=all&id=
+Current URL after OTP: https://uat.host.homeyhutz.com/listing?status=all
 ========== STEP 6: CLICK CREATE NEW LISTING ==========
 ✓ Create New Listing button clicked
 
@@ -86,7 +225,7 @@ Listing page URL: https://uat.homeyhutz.com/host-your-property/information
 ========== STEP 7: CLICK NEXT ON INFORMATION PAGE ==========
 ✓ Next button clicked
 
-Next page URL: https://uat.homeyhutz.com/host-your-property/5398/property-type
+Next page URL: https://uat.homeyhutz.com/host-your-property/information
 ========== STEP 8: SELECT PROPERTY BASICS ==========
 ✓ Selected Hut, Shared Room, Property Owner
 
@@ -105,31 +244,31 @@ Next page URL: https://uat.homeyhutz.com/host-your-property/5398/property-type
 ✓ Amenities, features, and activities selected
 
 ========== STEP 13: FILL DESCRIPTIONS AND PRICE ==========
-DEBUG: Current URL after price: https://uat.homeyhutz.com/host-your-property/5398/checkin-checkout
+DEBUG: Current URL after price: https://uat.homeyhutz.com/host-your-property/5415/checkin-checkout
 DEBUG: Page title: Homeyhuts | Book Verified, Safe Homestays | India’s 1st No-Commission Homestay Platform
 ✓ Descriptions and price entered
 
 ========== STEP 13B: HANDLE CHECKIN-CHECKOUT ==========
-DEBUG: URL before checkin-checkout: https://uat.homeyhutz.com/host-your-property/5398/checkin-checkout
-DEBUG: URL after checkin-checkout: https://uat.homeyhutz.com/host-your-property/5398/security-camera
+DEBUG: URL before checkin-checkout: https://uat.homeyhutz.com/host-your-property/5415/checkin-checkout
+DEBUG: URL after checkin-checkout: https://uat.homeyhutz.com/host-your-property/5415/security-camera
 ✓ Checkin-checkout handled
 
 ========== STEP 14: HANDLE SECURITY AND HOUSE RULES ==========
-DEBUG: URL at start of handleSecurityAndRules: https://uat.homeyhutz.com/host-your-property/5398/security-camera
+DEBUG: URL at start of handleSecurityAndRules: https://uat.homeyhutz.com/host-your-property/5415/security-camera
 DEBUG: Clicked security Yes
-DEBUG: On cancellation-policy page: https://uat.homeyhutz.com/host-your-property/5398/cancellation-policy
-DEBUG: On house-rules page: https://uat.homeyhutz.com/host-your-property/5398/house-rules
+DEBUG: On cancellation-policy page: https://uat.homeyhutz.com/host-your-property/5415/cancellation-policy
+DEBUG: On house-rules page: https://uat.homeyhutz.com/host-your-property/5415/house-rules
 DEBUG: Clicked Child-Friendly
 DEBUG: Clicked Infant-Friendly
 DEBUG: Clicked Pets Allowed
-DEBUG: After house-rules, URL: https://uat.homeyhutz.com/host-your-property/5398/checkin-method
+DEBUG: After house-rules, URL: https://uat.homeyhutz.com/host-your-property/5415/checkin-method
 ✓ Security and house rules configured
 
 ========== STEP 14B: HOST GREETS YOU ==========
 ✓ Host greets you selected
 
 ========== STEP 14C: UPLOAD DOCUMENTS ==========
-DEBUG: uploadDocuments - Current URL: https://uat.homeyhutz.com/host-your-property/5398/account-verification
+DEBUG: uploadDocuments - Current URL: https://uat.homeyhutz.com/host-your-property/5415/account-verification
 DEBUG: On account-verification page, skipping document upload
 ✓ Documents uploaded
 
@@ -145,12 +284,51 @@ DEBUG: On account-verification page, skipping document upload
 ========== PROPERTY LISTING FLOW COMPLETED SUCCESSFULLY ==========
 
 ]]></system-out>
-    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.77 (resolved driver for Chrome 145)
-[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\gaytri\.cache\selenium\chromedriver\win64\145.0.7632.77\chromedriver.exe
-Feb 21, 2026 11:00:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\gaytri\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+Mar 05, 2026 10:45:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 145
-Feb 21, 2026 11:00:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
-WARNING: Unable to find version of CDP to use for 145.0.7632.76. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Mar 05, 2026 10:45:30 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="verifySignupOrLoginFlow" classname="com.homeyhutz.tests.SignupFlowTest" time="24.013">
+    <system-out><![CDATA[
+========== STEP 1: OPENING HOME PAGE ==========
+✓ Home page loaded successfully
+
+========== STEP 2: OPENING LOGIN POPUP ==========
+✓ Login popup opened
+
+========== STEP 3: ENTERING PHONE NUMBER ==========
+✓ Phone number entered and continue clicked
+
+========== STEP 4: CHECKING FLOW TYPE ==========
+Existing user detected - on OTP page
+
+========== STEP 5: ENTERING OTP ==========
+Waiting for OTP page...
+✓ OTP page loaded - OTP input field found
+Entering OTP: 123456
+✓ OTP entered successfully: 123456
+Clicking Submit button...
+✓ Submit button clicked
+✓ OTP submitted
+
+========== STEP 6: VERIFYING OTP RESULT ==========
+Current URL after OTP: https://uat.homeyhutz.com/
+✓ OTP accepted - User logged in successfully
+
+========== LOGIN FLOW COMPLETED SUCCESSFULLY ==========
+
+Page title: Homeyhuts | Book Verified, Safe Homestays | India’s 1st No-Commission Homestay Platform
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\gaytri\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+Mar 05, 2026 10:48:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 05, 2026 10:48:02 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 145.0.7632.117. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
 </testsuite>

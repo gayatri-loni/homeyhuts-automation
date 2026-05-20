@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-21T23:00:26 IST" name="Surefire suite" finished-at="2026-02-21T23:02:48 IST" duration-ms="142082">
+  <suite started-at="2026-03-05T19:12:44 IST" name="Surefire suite" finished-at="2026-03-05T19:15:26 IST" duration-ms="161077">
     <groups>
     </groups>
-    <test started-at="2026-02-21T23:00:26 IST" name="Surefire test" finished-at="2026-02-21T23:02:48 IST" duration-ms="142082">
-      <class name="com.homeyhutz.tests.PropertyListingFlowTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.PropertyListingFlowTest@77e9807f]" started-at="2026-02-21T23:00:26 IST" name="setUp" finished-at="2026-02-21T23:00:28 IST" duration-ms="2617" status="PASS">
+    <test started-at="2026-03-05T19:12:44 IST" name="Surefire test" finished-at="2026-03-05T19:15:26 IST" duration-ms="161077">
+      <class name="com.homeyhutz.tests.BookingFlowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.homeyhutz.tests.BookingFlowTest@7f77e91b]" started-at="2026-03-05T19:12:45 IST" name="setUp" finished-at="2026-03-05T19:12:47 IST" duration-ms="2536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="newUserCompletesPropertyListingFlow()[pri:0, instance:com.homeyhutz.tests.PropertyListingFlowTest@77e9807f]" started-at="2026-02-21T23:00:28 IST" name="newUserCompletesPropertyListingFlow" finished-at="2026-02-21T23:02:47 IST" duration-ms="138712" status="PASS">
+        <test-method signature="verifyBookingFlowTillHostAccept()[pri:0, instance:com.homeyhutz.tests.BookingFlowTest@7f77e91b]" started-at="2026-03-05T19:12:47 IST" name="verifyBookingFlowTillHostAccept" finished-at="2026-03-05T19:15:26 IST" duration-ms="158484" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newUserCompletesPropertyListingFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.PropertyListingFlowTest@77e9807f]" started-at="2026-02-21T23:02:47 IST" name="tearDown" finished-at="2026-02-21T23:02:48 IST" duration-ms="699" status="PASS">
+        </test-method> <!-- verifyBookingFlowTillHostAccept -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.homeyhutz.tests.BookingFlowTest@7f77e91b]" started-at="2026-03-05T19:15:26 IST" name="tearDown" finished-at="2026-03-05T19:15:26 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=newUserCompletesPropertyListingFlow status=SUCCESS method=PropertyListingFlowTest.newUserCompletesPropertyListingFlow()[pri:0, instance:com.homeyhutz.tests.PropertyListingFlowTest@77e9807f] output={null}]]]>
+                <![CDATA[[TestResult name=verifyBookingFlowTillHostAccept status=SUCCESS method=BookingFlowTest.verifyBookingFlowTillHostAccept()[pri:0, instance:com.homeyhutz.tests.BookingFlowTest@7f77e91b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.homeyhutz.tests.PropertyListingFlowTest -->
+      </class> <!-- com.homeyhutz.tests.BookingFlowTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
