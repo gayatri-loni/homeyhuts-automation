@@ -4,6 +4,8 @@ import com.homeyhutz.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.time.Duration;
 
 public class HomePage extends BasePage {
 
@@ -39,6 +41,13 @@ public class HomePage extends BasePage {
 
     // Used in SignupFlowTest
     public void openLoginPopup() {
+        // Wait up to 5 s for phone input (handles React render delay on signup-signin page)
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(5)).until(
+                ExpectedConditions.visibilityOfElementLocated(phoneInput));
+            return;
+        } catch (Exception ignored) {}
+
         clickLoginIcon();
         try {
             clickLoginText();

@@ -110,6 +110,11 @@ public class BookingFlowTest extends BaseTest {
         }
 
         logAction("Guest flow: extracting booking ID from current confirmation URL");
+        String currentUrl = driver.getCurrentUrl();
+        if (currentUrl != null && currentUrl.contains("signup-signin")) {
+            throw new RuntimeException(
+                "Payment failed or session expired: redirected to sign-in page. URL: " + currentUrl);
+        }
         String bookingId = paymentPage.extractBookingId();
         Assert.assertFalse(bookingId == null || bookingId.isBlank(), "Booking ID extraction failed from confirmation URL.");
         logAction("Captured booking ID: " + bookingId);

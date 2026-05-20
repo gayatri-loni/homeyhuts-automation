@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BlockDate TC3 Only" verbose="2">
+  <test name="TC3 - Manual Booking Rejected for Blocked Date">
+    <classes>
+      <class name="com.homeyhutz.tests.BlockDateTest">
+        <methods>
+          <include name="verifyBlockedDateInManualBookingCalendar"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  Full suite: Playwright tests (TC01-TC08) + TC06 AI analysis via Claude.
+  Run with: mvn test -DsuiteXmlFile=src/test/resources/testng-full.xml
+  Requires: ANTHROPIC_API_KEY env var for TC06 (skips gracefully if not set).
+-->
+<suite name="Homeyhuts Full Suite — Playwright + AI Agent" verbose="2" thread-count="1">
+
+    <test name="TC01 - Home Page Tests">
+        <classes>
+            <class name="com.homeyhutz.playwright.tests.TC01_HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="TC02 - Auth Input Validation Tests">
+        <classes>
+            <class name="com.homeyhutz.playwright.tests.TC02_AuthInputValidationTest"/>
+        </classes>
+    </test>
+
+    <test name="TC03 - Login Flow Tests (Existing User)">
+        <classes>
+            <class name="com.homeyhutz.playwright.tests.TC03_LoginFlowTest"/>
+        </classes>
+    </test>
+
+    <test name="TC04 - Signup Flow Tests (New User)">
+        <classes>
+            <class name="com.homeyhutz.playwright.tests.TC04_SignupFlowTest"/>
+        </classes>
+    </test>
+
+    <test name="TC05 - OTP Edge Cases">
+        <classes>
+            <class name="com.homeyhutz.playwright.tests.TC05_OtpEdgeCasesTest"/>
+        </classes>
+    </test>
+
+    <test name="TC07 - Registration Form Validation">
+        <classes>
+            <class name="com.homeyhutz.playwright.tests.TC07_RegistrationFormValidationTest"/>
+        </classes>
+    </test>
+
+    <test name="TC08 - OTP Advanced Tests">
+        <classes>
+            <class name="com.homeyhutz.playwright.tests.TC08_OtpAdvancedTest"/>
+        </classes>
+    </test>
+
+    <test name="TC09 - Booking Flow Tests">
+        <classes>
+            <class name="com.homeyhutz.playwright.tests.TC09_BookingFlowTest"/>
+        </classes>
+    </test>
+
+    <test name="TC06 - AI Testing Agent (Claude Analysis)">
+        <classes>
+            <class name="com.homeyhutz.playwright.tests.TC06_AITestingAgentTest"/>
+        </classes>
+    </test>
+
+</suite>
